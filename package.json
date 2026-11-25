@@ -1,0 +1,33 @@
+{
+  "name": "flowdesk-monorepo",
+  "version": "1.0.0",
+  "description": "FLOWDESK — Business Operations & Client Management Platform",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "test:server": "npm run test --prefix server",
+    "test": "npm run test:server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "saas",
+    "freelance",
+    "agency",
+    "client-portal",
+    "paystack",
+    "socketio",
+    "fullstack"
+  ],
+  "author": "FlowDesk Engineering",
+  "license": "MIT"
+}
+

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom baseline styling for enterprise SaaS dashboard */
+@layer base {
+  body {
+    @apply min-h-screen bg-surface-50 text-surface-900 font-sans antialiased;
+  }
+}
+
